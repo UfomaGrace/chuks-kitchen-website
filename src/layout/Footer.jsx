@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import Logo from "../components/Logo";
+import Logo from "../components/ui/Logo";
 
 export default function Footer() {
   return (
