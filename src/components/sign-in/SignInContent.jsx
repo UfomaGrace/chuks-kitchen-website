@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoEye, IoEyeOff, IoMail } from "react-icons/io5";
-import { FaApple, FaFacebookF } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { MdLock } from "react-icons/md";
 
@@ -13,11 +13,12 @@ export default function SignInContent() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8 w-full px-30">
-      <div className="text-center items-center justify-center mb-6">
-        <Logo className="" />
+      <div className="text-center items-center justify-center mb-8 mt-16">
+        <Logo/>
         <h1 className="text-3xl font-bold">Login Your Account</h1>
       </div>
-      <form className="">
+
+      <form>
         {/* Email */}
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1 text-[#3B4758]">
@@ -75,7 +76,7 @@ export default function SignInContent() {
         <p className="text-center text-[#1F2937] my-4 text-sm">Or continue with</p>
 
         {/* Google */}
-        <button type="button" className="w-full active:scale-[0.98] border border-gray-300 rounded-lg py-3 mb-3 flex items-center justify-center gap-3 bg-white cursor-pointer transition-all duration-200 hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#337FFF] focus:ring-offset-2 focus:outline-none hover:shadow-md">
+        <button type="button" className="w-full active:scale-[0.98] border border-gray-300 rounded-lg py-3 mb-4 flex items-center justify-center gap-3 bg-white cursor-pointer transition-all duration-200 hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-[#337FFF] focus:ring-offset-2 focus:outline-none hover:shadow-md">
             <FcGoogle className="text-2xl"/> 
             <span className="text-[#3B4758] font-medium">Continue with Google</span>
         </button>
@@ -87,7 +88,7 @@ export default function SignInContent() {
         </button>
 
         {/* Create account */}
-        <p className="text-center text-sm text-gray-500 mt-4">
+        <p className="text-center text-sm text-gray-500 mt-6 mb-18">
           Don’t have an account?{" "}
           <Link to={"/sign-up"} className="text-[#337FFF] cursor-pointer transition-colors hover:text-[#265FCC]">
             Create an account

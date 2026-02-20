@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroImage from '../ui/HeroImage'
+import HeroImage from './HeroImage'
 
-export default function SignInImage() {
+export default function AuthLayout() {
   return (
-    <div className='relative w-full'>
-      <HeroImage/>
+    <div className='relative w-full min-h-screen'>
+        <HeroImage />
 
-      {/* Overlay */}
+        {/* Overlay */}
       <div className="absolute inset-0 bg-orange-400/60"></div>
 
       <div className="absolute inset-0 flex items-center justify-center px-6">

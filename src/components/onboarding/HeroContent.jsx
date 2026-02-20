@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function HeroContent() {
   return (
-    <div className='px-16 mb-10 min-h-screen'>
+    <div className='px-16 mb-10'>
       <div className='items-center flex justify-between mt-4'>
         <Logo/>
         <Link to={"/sign-in"} className='text-[#1e88e5] border-2 border-[#1e88e5] px-6 py-2.5 text-sm rounded-lg font-semibold bg-white transition-all hover:bg-[#1e88e5] hover:text-white ease-in-out duration-300'>Sign In</Link>

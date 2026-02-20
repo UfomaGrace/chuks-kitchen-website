@@ -4,7 +4,7 @@ import Logo from "../components/ui/Logo";
 
 export default function Footer() {
   return (
-    <div className="text-[#ffffff]/70 bg-[#70402f] py-8">
+    <div className="hidden md:block text-[#ffffff]/70 bg-[#70402f] py-8">
       <div className="grid grid-cols-8 px-16 ">
         <div className="col-span-1">
           <Logo className="mb-3" />
