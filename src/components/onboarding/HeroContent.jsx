@@ -6,35 +6,50 @@ import { Link } from 'react-router-dom';
 
 export default function HeroContent() {
   return (
-    <div className='px-16 mb-10'>
-      <div className='items-center flex justify-between mt-4'>
-        <Logo/>
+    <div className='lg:px-16 md:px-8 px-3 mb-10'>
+
+      {/* Mobile Screen */}
+      <div className='block lg:hidden mt-4'>
+        <img src="/images/mobileOnboarding.png" alt="Chuks Kitchen" className='w-full object-cover'/>
+        <div className='mt-3 px-4 space-y-12'>
+          <div className='flex justify-end'>
+            <Link to={"/sign-in"} className='text-[#1e88e5] border-2 border-[#1e88e5] px-6 py-2.5 text-sm rounded-lg font-semibold bg-white transition-all hover:bg-[#1e88e5] hover:text-white ease-in-out duration-300'>Sign In</Link>
+          </div>
+          <div className='flex justify-center'>
+            <Logo />
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Screen */}
+      <div className='items-center lg:flex hidden justify-between mt-4 '>
+        <Logo />
         <Link to={"/sign-in"} className='text-[#1e88e5] border-2 border-[#1e88e5] px-6 py-2.5 text-sm rounded-lg font-semibold bg-white transition-all hover:bg-[#1e88e5] hover:text-white ease-in-out duration-300'>Sign In</Link>
       </div>
 
-      <div className='mt-20'>
+      <div className='lg:mt-20 md:mt-10'>
         <h2 className='text-3xl font-bold'>Your Authentic Taste of Nigeria</h2>
         <p className='text-sm font-semibold py-6 text-[#1f2937]'>
           Experience homemade flavors delivered fresh to your desk or home. 
           We bring the rich culinary heritage of Nigeria right to your doorstep.
         </p>
 
-        <div className='grid grid-cols-2 gap-4'>
-          <div className='flex gap-3 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+          <div className='flex gap-3 items-center bg-gray-200 lg:bg-transparent p-2 lg:p-0 rounded-lg lg:rounded-none'>
             <span className='bg-[#ffe1c4] text-[#ff7a18] rounded-lg px-2 py-2 text-2xl'><PiForkKnifeFill /></span>
             <span className='text-sm font-semibold text-[#1f2937]'>Freshly Prepared</span>
           </div>
-          <div className='flex gap-3 items-center'>
+          <div className='flex gap-3 items-center bg-gray-200 lg:bg-transparent p-2 lg:p-0 rounded-lg lg:rounded-none'>
             <span className='bg-[#ffe1c4] text-[#ff7a18] rounded-lg px-2 py-2 text-2xl'><PiForkKnifeFill /></span>
             <span className='text-sm font-semibold text-[#1f2937]'>Support Local Business</span>
           </div>
-          <div className='flex gap-3 items-center'>
+          <div className='flex gap-3 items-center bg-gray-200 lg:bg-transparent p-2 lg:p-0 rounded-lg lg:rounded-none'>
             <span className='bg-[#ffe1c4] text-[#ff7a18] rounded-lg px-2 py-2 text-2xl'><PiTruck /></span>
             <span className='text-sm font-semibold text-[#1f2937]'>Fast and Reliable Delivery</span>
           </div>
         </div>
 
-        <div className='mb-4 mt-10 space-y-6'>
+        <div className='mb-4 mt-12 space-y-6'>
           <Link to={"/sign-in"} className='block bg-[#ff7a18] text-white text-[16px] rounded-lg w-full py-3 text-center font-semibold transition-all hover:bg-[#e66a0f] hover:-translate-y-1 ease-in-out duration-500'>Start Your Order</Link>
 
           <Link to={"/sign-in"} className='w-full block text-[#1e88e5] border-2 border-[#1e88e5] py-3 text-[16px] rounded-lg text-center font-semibold bg-white transition-all hover:bg-[#1e88e5] hover:text-white ease-in-out duration-500 hover:-translate-y-1'>Learn More About Us</Link>
@@ -43,7 +58,7 @@ export default function HeroContent() {
       </div>
       
 
-      <div className=' mt-12'>
+      <div className=' mt-12 hidden lg:block'>
         <div className='w-full bg-[#323b3b1a] h-[0.5px] mx-auto'></div>
         <div className='flex gap-2 mt-3 text-sm justify-center items-center text-center'>
           <p>© 2024 Chuks Kitchen.</p>

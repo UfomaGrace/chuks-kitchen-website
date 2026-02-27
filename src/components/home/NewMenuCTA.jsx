@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function NewMenuCTA() {
   return (
-    <div className='relative'> 
-        <img src="/images/HomeImage2.png" alt="New Menu" className='w-full max-h-screen object-cover'/>
+    <div className='relative  h-screen lg:h-125'> 
+        <img src="/images/HomeImage2.png" alt="New Menu" className='w-full h-full object-cover'/>
 
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-linear-0 bg-black/40"></div>
 
-        <div className='absolute inset-0 top-1/3 text-white px-18 max-w-4xl'>
-            <h1 className='text-5xl font-bold'>Introducing Our New Menu Additions!</h1>
-            <p className='mt-6 font-semibold text-xl'>
+        <div className='absolute inset-0 md:top-1/3 top-1/4 text-white lg:px-18 px-6 max-w-4xl'>
+            <h1 className='text-3xl lg:text-5xl font-bold'>Introducing Our New Menu Additions!</h1>
+            <p className='mt-4 lg:mt-6 font-semibold text-lg lg:text-xl'>
                 Explore exciting new dishes, crafted with the freshest
                 ingredients and authentic Nigerian flavors. Limited time
                 offer!

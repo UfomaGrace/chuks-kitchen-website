@@ -5,6 +5,7 @@ import Onboarding from '../pages/Onboarding'
 import SignIn from '../pages/SignIn'
 import Home from '../pages/Home'
 import SignUp from '../pages/SignUp'
+import Menu from '../pages/Menu'
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
           {/* Protected / App Pages */}
           <Route path='/app' element={<Navbar />}>
             <Route path="home" element={<Home />} />
+            <Route path="menu" element={<Menu/>} />
           </Route>
 
         </Routes>

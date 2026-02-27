@@ -10,9 +10,9 @@ export default function SignUpContent() {
     const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 w-full px-30">
+    <div className="min-h-screen bg-gray-100 md:p-8 p-2 w-full lg:px-30 md:px-16 px-4 py-4">
       <div className="text-center items-center justify-center mb-6">
-        <Logo className="" />
+        <Logo/>
         <h1 className="text-3xl font-bold">Create Your Account</h1>
       </div>
 

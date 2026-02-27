@@ -34,11 +34,11 @@ export default function PopularCategories() {
         },
     ]
   return (
-    <div className='px-18 py-18 bg-gray-100'>
+    <div className='lg:px-18 px-4 lg:py-18 py-6 bg-gray-200'>
         <h2 className="text-center text-2xl font-bold mb-10">Popular Categories</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-17.5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-17.5 gap-6'>
             {categories.map((item) => (
-                <div key={item.id} className="group bg-white rounded-2xl overflow-hidden h-full flex flex-col shadow-sm duration-300 transition-all ease-out cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                <div key={item.id} className="group bg-white rounded-2xl border-2 border-white overflow-hidden h-full flex flex-col shadow-sm duration-300 transition-all ease-out cursor-pointer hover:shadow-xl hover:-translate-y-1">
                     <img src={item.image} alt={item.title} 
                         className="w-full h-48 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />

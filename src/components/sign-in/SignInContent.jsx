@@ -12,8 +12,8 @@ export default function SignInContent() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 w-full px-30">
-      <div className="text-center items-center justify-center mb-8 mt-16">
+    <div className="min-h-screen bg-gray-100 md:p-8 p-2 w-full lg:px-30 md:px-12 px-4">
+      <div className="text-center items-center justify-center mb-8 lg:mt-16 md:mt-8 mt-4">
         <Logo/>
         <h1 className="text-3xl font-bold">Login Your Account</h1>
       </div>

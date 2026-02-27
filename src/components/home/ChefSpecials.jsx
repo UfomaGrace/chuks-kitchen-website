@@ -52,12 +52,12 @@ export default function ChefSpecials() {
         },
     ]
   return (
-    <div className='bg-gray-100 px-18 py-18'>
+    <div className='lg:px-18 px-4 lg:py-18 py-6 bg-gray-200'>
         <h2 className='text-center text-2xl font-bold mb-10'>Chef's Specials</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-17.5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-17.5 gap-6'>
             {specials.map((item) => (
                 <div key={item.id} 
-                    className='group bg-white rounded-2xl overflow-hidden flex flex-col h-full shadow-sm transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-1'>
+                    className='group bg-white rounded-2xl border-2 border-white overflow-hidden flex flex-col h-full shadow-sm transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-1'>
                     <img
                         src={item.image}
                         alt={item.title}
@@ -66,6 +66,7 @@ export default function ChefSpecials() {
                     <div className='py-3 px-4.5 mb-4 flex flex-col grow'>
                         <div className='font-semibold text-xl leading-8.5'>{item.title}</div>
                         <div className='font-medium text-[16px] leading-6 text-[#1F2937] py-2'>{item.description}</div>
+                        
                         <div className='flex justify-between items-center mt-auto'>
                             <span className='text-sm font-semibold text-[#FF7A18]'>
                                 {item.price}

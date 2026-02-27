@@ -6,8 +6,8 @@ import Footer from '../layout/Footer'
 export default function SignUp() {
   return (
     <div>
-        <div className='grid grid-cols-2'>
-            <AuthLayout/>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='hidden lg:block'><AuthLayout/></div>
             <SignUpContent/>
         </div>
         <Footer/>
